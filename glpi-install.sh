@@ -14,7 +14,10 @@ Install_Deps(){
         dnf install mariadb-server -y
         echo -e "XXX\n50\nInstallation d'Mariabd... Fait.\nXXX"
 	echo -e "XXX\n55\nInstallation de PHP... \nXXX"
-	sudo dnf module enable php:8.0 -y
+	if [ $(cat /etc/system-release-cpe | cut -d ':' -f5) = "8" ]
+	then
+        	dnf module enable php:8.0 -y
+	fi
         dnf install php-cli php-fpm php-mbstring php-zip php-ldap php-intl php-gd php-curl php-xml php-mysqlnd php-bz2 php-opcache -y
         echo -e "XXX\n100\nInstallation de PHP... Fait.\nXXX"
 } |whiptail --title "Installion des dépendances" --gauge "Merci de patienter." 6 60 0

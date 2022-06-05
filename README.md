@@ -7,4 +7,4 @@ Install Script of GLPI on RHEL 8.
 * News
 
 # Requirement
-RHEL 8, the script is actually for compatible with RHEL 9.
+RHEL 8, the script is actually not compatible with RHEL 9.

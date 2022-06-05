@@ -132,6 +132,7 @@ Main(){
 	Install_GLPI;
 	Install_GLPI_Plugin;
 	Config_Apache;
+	Post_Install;
 }
 
 Main

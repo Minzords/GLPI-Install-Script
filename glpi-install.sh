@@ -10,7 +10,7 @@ Install_Deps(){
 	echo -e "XXX\n0\nInstallation d'Apache... \nXXX"
 	dnf install httpd -y
 	echo -e "XXX\n25\nInstallation d'Apache... Fait.\nXXX"
-	echo -e "XXX\n30\nInstallation d'MariaDB... \nXXX"
+	echo -e "XXX\n30\nInstallation de MariaDB... \nXXX"
         dnf install mariadb-server -y
         echo -e "XXX\n50\nInstallation d'Mariabd... Fait.\nXXX"
 	echo -e "XXX\n55\nInstallation de PHP... \nXXX"
